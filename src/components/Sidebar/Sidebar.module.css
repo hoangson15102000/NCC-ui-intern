@@ -1,0 +1,35 @@
+.sidebar {
+  width: 150px;
+  height: 100%;
+  background-color: #191718;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.sidebar ul li {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px;
+  color: #aaaaaa;
+  border-bottom: 1px solid #5c5c5c;
+}
+.sidebar ul li:hover {
+  background-color: #5c5c5c;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 921px) {
+  .sidebar {
+    width: 100px;
+  }
+}
+/* Mobile */
+@media (max-width: 420px) {
+  .sidebar {
+    display: none;
+  }
+}

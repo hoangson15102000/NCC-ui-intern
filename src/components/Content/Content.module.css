@@ -1,0 +1,158 @@
+.main-content {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  text-align: justify;
+}
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.content .img {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about {
+  text-align: center;
+  background-color: #efefef;
+  padding: 38px 15%;
+}
+.about h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 18px;
+}
+.about p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+}
+.description {
+  margin-top: 40px;
+  display: flex;
+  gap: 50px;
+}
+.description img {
+  float: left;
+}
+.description p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.description h2 {
+  margin-bottom: 18px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 79px;
+  padding: 30px 129px;
+  border-top: 1px solid #efefef;
+  background-color: #ffffff;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3e3e3e;
+}
+.subHeader {
+  display: none;
+}
+/* Ipad */
+@media (max-width: 921px) {
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+  }
+  .description {
+    display: inline-block;
+  }
+  .main-content {
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    left: 100px;
+  }
+  .description h2 {
+    text-align: center;
+  }
+  .content .img img {
+    width: 30%;
+  }
+  .content {
+    margin: 0 10%;
+  }
+  .item {
+    padding-bottom: 16px;
+  }
+}
+/* Mobile */
+@media (max-width: 420px) {
+  .main-content {
+    width: 100%;
+    left: 0;
+    top: 50px;
+  }
+  .content .img img {
+    width: 40%;
+  }
+  .description h2 {
+    font-size: 18px;
+  }
+  .description p,
+  .about p {
+    font-size: 14px;
+  }
+  .about {
+    padding: 5%;
+  }
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10%;
+  }
+  .footer p {
+    font-size: 10px;
+  }
+  .subHeader {
+    display: block;
+    background-color: #000000;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    color: white;
+  }
+  .subHeader ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+  .subHeader ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 50px;
+  }
+  .subHeader ul li:hover a,
+  .subHeader ul li:active a {
+    color: red;
+  }
+}
